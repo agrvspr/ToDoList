@@ -12,15 +12,15 @@ class TaskRepository:
 
     def add_task(self, title):
         #execute needs a tuple since I have a placeholder here (?) 
-        self.conn.execute(
+        cursor = self.conn.execute(
             "INSERT INTO tasks (title) VALUES (?)", (title,)
         )
         self.conn.commit()
-        return self.conn.lastrowid
+        return cursor.lastrowid
         
 
     def list_tasks(self):
-        self.conn.execute(
+        return self.conn.execute(
             "SELECT id, title, completed FROM tasks"
         ).fetchall()
 

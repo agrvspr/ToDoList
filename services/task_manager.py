@@ -6,7 +6,7 @@ class TaskManager:
         return self.repo.add_task(task)
 
     def list_tasks(self):
-        return self.repo.get_tasks()
+        return self.repo.list_tasks()
 
     def delete_task(self, index):
         return self.repo.delete_task(index)
