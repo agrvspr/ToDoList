@@ -1,35 +1,30 @@
-Warframe Farming List Tracker
+# Warframe Farming List Tracker
 A simple web application to track items you need to farm in Warframe. Built with FastAPI and SQLite.
 Features
 
-Project Structure
+## Project Structure
 ToDoList/
-├── main.py                          # FastAPI application entry point
-├── index.html                       # Web interface
-├── schema.sql                       # Database schema
-├── tasks.db                         # SQLite database (created automatically)
-├── models/
-│   └── task.py                      # Pydantic models
-├── services/
-│   └── task_manager.py              # Business logic layer
-└── repositories/
-    └── task_repository.py           # Database operations
+- main.py                          # FastAPI application entry point
+- index.html                       # Web interface
+- schema.sql                       # Database schema
+- tasks.db                         # SQLite database (created automatically)
+- models/
+- task.py                      # Pydantic models
+- services/
+- task_manager.py              # Logic layer
+- repositories/
+- task_repository.py           # Database operations
 
 Requirements
 
-Python 3.7+
-FastAPI
-Uvicorn
-Pydantic
+Python 3.7+, 
+FastAPI, 
+Uvicorn, 
+Pydantic, 
 SQLite3 (included with Python)
 
-Installation
 
-Clone or download this project
-Install required packages:
-
-bash   pip install fastapi uvicorn pydantic
-Running the Application
+### Running the Application
 
 Start the server:
 
