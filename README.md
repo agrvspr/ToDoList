@@ -38,7 +38,7 @@ bash   python -m uvicorn main:app --reload
 Open your browser and go to:
    http://127.0.0.1:8000
 
-Start tracking your Warframe farming items!
+Start tracking your farming items!
 
 Usage
 Adding Items
